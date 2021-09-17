@@ -22,6 +22,6 @@ class CotizacionController extends Controller
             return response()->json(["message"=>"Usuario no encontrado"], 404);
         }
         $cotizacion->delete();
-        return response("success");
+        return response()->json(["message"=>"success"], 200);
     }
 }
